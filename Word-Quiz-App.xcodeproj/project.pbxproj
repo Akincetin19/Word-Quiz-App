@@ -7,23 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E796404329BBEAFA00C10B0D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E796404229BBEAFA00C10B0D /* CardView.swift */; };
+		E7AFCAB729B8B88700962FEB /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AFCAB629B8B88700962FEB /* CustomButton.swift */; };
+		E7AFCAB929B8B8A000962FEB /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AFCAB829B8B8A000962FEB /* CustomTextField.swift */; };
 		E7F8619929B80D97006045F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F8619829B80D97006045F1 /* AppDelegate.swift */; };
 		E7F8619B29B80D97006045F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F8619A29B80D97006045F1 /* SceneDelegate.swift */; };
 		E7F8619D29B80D97006045F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F8619C29B80D97006045F1 /* ViewController.swift */; };
-		E7F861A029B80D97006045F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7F8619E29B80D97006045F1 /* Main.storyboard */; };
 		E7F861A229B80D98006045F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7F861A129B80D98006045F1 /* Assets.xcassets */; };
 		E7F861A529B80D98006045F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7F861A329B80D98006045F1 /* LaunchScreen.storyboard */; };
+		E7F861AD29B80DEC006045F1 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F861AC29B80DEC006045F1 /* LoginScreen.swift */; };
+		E7F861AF29B80E30006045F1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F861AE29B80E30006045F1 /* LoginView.swift */; };
+		E7F861B129B80F95006045F1 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F861B029B80F95006045F1 /* SignUpView.swift */; };
+		E7F861B329B81F41006045F1 /* Ext+UIVIEW.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F861B229B81F41006045F1 /* Ext+UIVIEW.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E796404229BBEAFA00C10B0D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		E7AFCAB629B8B88700962FEB /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		E7AFCAB829B8B8A000962FEB /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		E7F8619529B80D97006045F1 /* Word-Quiz-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Word-Quiz-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7F8619829B80D97006045F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7F8619A29B80D97006045F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E7F8619C29B80D97006045F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E7F8619F29B80D97006045F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E7F861A129B80D98006045F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7F861A429B80D98006045F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7F861A629B80D98006045F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7F861AC29B80DEC006045F1 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		E7F861AE29B80E30006045F1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E7F861B029B80F95006045F1 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		E7F861B229B81F41006045F1 /* Ext+UIVIEW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIVIEW.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,8 +52,8 @@
 		E7F8618C29B80D97006045F1 = {
 			isa = PBXGroup;
 			children = (
-				E7F8619729B80D97006045F1 /* Word-Quiz-App */,
 				E7F8619629B80D97006045F1 /* Products */,
+				E7F8619729B80D97006045F1 /* Word-Quiz-App */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,10 +71,16 @@
 				E7F8619829B80D97006045F1 /* AppDelegate.swift */,
 				E7F8619A29B80D97006045F1 /* SceneDelegate.swift */,
 				E7F8619C29B80D97006045F1 /* ViewController.swift */,
-				E7F8619E29B80D97006045F1 /* Main.storyboard */,
 				E7F861A129B80D98006045F1 /* Assets.xcassets */,
 				E7F861A329B80D98006045F1 /* LaunchScreen.storyboard */,
 				E7F861A629B80D98006045F1 /* Info.plist */,
+				E7F861AC29B80DEC006045F1 /* LoginScreen.swift */,
+				E7F861AE29B80E30006045F1 /* LoginView.swift */,
+				E7F861B029B80F95006045F1 /* SignUpView.swift */,
+				E7F861B229B81F41006045F1 /* Ext+UIVIEW.swift */,
+				E7AFCAB629B8B88700962FEB /* CustomButton.swift */,
+				E7AFCAB829B8B8A000962FEB /* CustomTextField.swift */,
+				E796404229BBEAFA00C10B0D /* CardView.swift */,
 			);
 			path = "Word-Quiz-App";
 			sourceTree = "<group>";
@@ -127,7 +145,6 @@
 			files = (
 				E7F861A529B80D98006045F1 /* LaunchScreen.storyboard in Resources */,
 				E7F861A229B80D98006045F1 /* Assets.xcassets in Resources */,
-				E7F861A029B80D97006045F1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +155,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7F861B329B81F41006045F1 /* Ext+UIVIEW.swift in Sources */,
 				E7F8619D29B80D97006045F1 /* ViewController.swift in Sources */,
+				E7F861AD29B80DEC006045F1 /* LoginScreen.swift in Sources */,
 				E7F8619929B80D97006045F1 /* AppDelegate.swift in Sources */,
+				E796404329BBEAFA00C10B0D /* CardView.swift in Sources */,
+				E7AFCAB729B8B88700962FEB /* CustomButton.swift in Sources */,
+				E7F861AF29B80E30006045F1 /* LoginView.swift in Sources */,
+				E7F861B129B80F95006045F1 /* SignUpView.swift in Sources */,
 				E7F8619B29B80D97006045F1 /* SceneDelegate.swift in Sources */,
+				E7AFCAB929B8B8A000962FEB /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E7F8619E29B80D97006045F1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E7F8619F29B80D97006045F1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E7F861A329B80D98006045F1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,9 +305,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Word-Quiz-App/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Animations;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -299,7 +315,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "kromatin.Word-Quiz-App";
+				PRODUCT_BUNDLE_IDENTIFIER = kromatin.Animations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -316,9 +332,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Word-Quiz-App/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Animations;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -326,7 +342,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "kromatin.Word-Quiz-App";
+				PRODUCT_BUNDLE_IDENTIFIER = kromatin.Animations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
