@@ -9,15 +9,25 @@ import UIKit
 
 class CardView: UIView {
 
+    let button : UIButton = {
+       
+        let btn = UIButton(frame: .zero)
+        btn.setTitle("Make Animations", for: .normal)
+        btn.backgroundColor = .blue
+        return btn
+    }()
     override init(frame: CGRect) {
         super.init(frame: frame)
         layer.cornerRadius = 32
         backgroundColor = .red
-        
+        addSubview(button)
+        isUserInteractionEnabled = false
+        button.frame = CGRect(x: 100, y: 100, width: 100, height: 50)
     }
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+
     func setupCardViews(frame: CGRect, isUserInteractionEnable: Bool) {
         
         self.frame = frame
