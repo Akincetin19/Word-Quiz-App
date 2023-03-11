@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E751CAF129BCBD5400C7815E /* CustomOptionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E751CAF029BCBD5400C7815E /* CustomOptionButton.swift */; };
 		E796404329BBEAFA00C10B0D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E796404229BBEAFA00C10B0D /* CardView.swift */; };
 		E7AFCAB729B8B88700962FEB /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AFCAB629B8B88700962FEB /* CustomButton.swift */; };
 		E7AFCAB929B8B8A000962FEB /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AFCAB829B8B8A000962FEB /* CustomTextField.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E751CAF029BCBD5400C7815E /* CustomOptionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOptionButton.swift; sourceTree = "<group>"; };
 		E796404229BBEAFA00C10B0D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		E7AFCAB629B8B88700962FEB /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		E7AFCAB829B8B8A000962FEB /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -49,9 +51,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E751CAEB29BCBC4300C7815E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E751CAEE29BCBC8300C7815E /* CustomViews */,
+				E751CAED29BCBC7800C7815E /* CardView */,
+				E751CAEC29BCBC6200C7815E /* LoginScreenViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E751CAEC29BCBC6200C7815E /* LoginScreenViews */ = {
+			isa = PBXGroup;
+			children = (
+				E7F861AE29B80E30006045F1 /* LoginView.swift */,
+				E7F861B029B80F95006045F1 /* SignUpView.swift */,
+			);
+			path = LoginScreenViews;
+			sourceTree = "<group>";
+		};
+		E751CAED29BCBC7800C7815E /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				E796404229BBEAFA00C10B0D /* CardView.swift */,
+				E751CAF029BCBD5400C7815E /* CustomOptionButton.swift */,
+			);
+			path = CardView;
+			sourceTree = "<group>";
+		};
+		E751CAEE29BCBC8300C7815E /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				E7AFCAB829B8B8A000962FEB /* CustomTextField.swift */,
+				E7AFCAB629B8B88700962FEB /* CustomButton.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		E751CAEF29BCBC9600C7815E /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				E7F8619C29B80D97006045F1 /* ViewController.swift */,
+				E7F861AC29B80DEC006045F1 /* LoginScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
 		E7F8618C29B80D97006045F1 = {
 			isa = PBXGroup;
 			children = (
+				E751CAEF29BCBC9600C7815E /* Screen */,
+				E751CAEB29BCBC4300C7815E /* Views */,
 				E7F8619629B80D97006045F1 /* Products */,
 				E7F8619729B80D97006045F1 /* Word-Quiz-App */,
 			);
@@ -70,17 +120,10 @@
 			children = (
 				E7F8619829B80D97006045F1 /* AppDelegate.swift */,
 				E7F8619A29B80D97006045F1 /* SceneDelegate.swift */,
-				E7F8619C29B80D97006045F1 /* ViewController.swift */,
 				E7F861A129B80D98006045F1 /* Assets.xcassets */,
 				E7F861A329B80D98006045F1 /* LaunchScreen.storyboard */,
 				E7F861A629B80D98006045F1 /* Info.plist */,
-				E7F861AC29B80DEC006045F1 /* LoginScreen.swift */,
-				E7F861AE29B80E30006045F1 /* LoginView.swift */,
-				E7F861B029B80F95006045F1 /* SignUpView.swift */,
 				E7F861B229B81F41006045F1 /* Ext+UIVIEW.swift */,
-				E7AFCAB629B8B88700962FEB /* CustomButton.swift */,
-				E7AFCAB829B8B8A000962FEB /* CustomTextField.swift */,
-				E796404229BBEAFA00C10B0D /* CardView.swift */,
 			);
 			path = "Word-Quiz-App";
 			sourceTree = "<group>";
@@ -161,6 +204,7 @@
 				E7F8619929B80D97006045F1 /* AppDelegate.swift in Sources */,
 				E796404329BBEAFA00C10B0D /* CardView.swift in Sources */,
 				E7AFCAB729B8B88700962FEB /* CustomButton.swift in Sources */,
+				E751CAF129BCBD5400C7815E /* CustomOptionButton.swift in Sources */,
 				E7F861AF29B80E30006045F1 /* LoginView.swift in Sources */,
 				E7F861B129B80F95006045F1 /* SignUpView.swift in Sources */,
 				E7F8619B29B80D97006045F1 /* SceneDelegate.swift in Sources */,
