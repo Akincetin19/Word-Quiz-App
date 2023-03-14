@@ -7,10 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E74798C429BFC965009D8122 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74798C329BFC965009D8122 /* MainScreen.swift */; };
+		E74798C629BFCDF9009D8122 /* MainScrenCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74798C529BFCDF9009D8122 /* MainScrenCardView.swift */; };
+		E74798C829BFE16A009D8122 /* AddDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74798C729BFE16A009D8122 /* AddDataViewController.swift */; };
+		E74798CB29BFE4CC009D8122 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E74798CA29BFE4CC009D8122 /* FirebaseAuth */; };
+		E74798CD29BFE4CC009D8122 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = E74798CC29BFE4CC009D8122 /* FirebaseAuthCombine-Community */; };
+		E74798CF29BFE4CC009D8122 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = E74798CE29BFE4CC009D8122 /* FirebaseDatabase */; };
+		E74798D129BFE4CC009D8122 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E74798D029BFE4CC009D8122 /* FirebaseDatabaseSwift */; };
+		E74798D329BFE4CC009D8122 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E74798D229BFE4CC009D8122 /* FirebaseFirestore */; };
+		E74798D529BFE4CC009D8122 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = E74798D429BFE4CC009D8122 /* FirebaseFirestoreCombine-Community */; };
+		E74798D729BFE4CC009D8122 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E74798D629BFE4CC009D8122 /* FirebaseFirestoreSwift */; };
+		E74798D929BFE4CC009D8122 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = E74798D829BFE4CC009D8122 /* FirebaseFunctions */; };
+		E74798DB29BFE4CC009D8122 /* FirebaseFunctionsCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = E74798DA29BFE4CC009D8122 /* FirebaseFunctionsCombine-Community */; };
+		E74798DD29BFE4CC009D8122 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = E74798DC29BFE4CC009D8122 /* FirebaseStorage */; };
+		E74798DF29BFE4CC009D8122 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = E74798DE29BFE4CC009D8122 /* FirebaseStorageCombine-Community */; };
+		E74798E129BFE5BA009D8122 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E74798E029BFE5B9009D8122 /* GoogleService-Info.plist */; };
 		E751CAF129BCBD5400C7815E /* CustomOptionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E751CAF029BCBD5400C7815E /* CustomOptionButton.swift */; };
 		E796404329BBEAFA00C10B0D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E796404229BBEAFA00C10B0D /* CardView.swift */; };
 		E7AFCAB729B8B88700962FEB /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AFCAB629B8B88700962FEB /* CustomButton.swift */; };
 		E7AFCAB929B8B8A000962FEB /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AFCAB829B8B8A000962FEB /* CustomTextField.swift */; };
+		E7E97D2F29BD19C5001F3C32 /* WordCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E97D2E29BD19C5001F3C32 /* WordCardView.swift */; };
 		E7F8619929B80D97006045F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F8619829B80D97006045F1 /* AppDelegate.swift */; };
 		E7F8619B29B80D97006045F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F8619A29B80D97006045F1 /* SceneDelegate.swift */; };
 		E7F8619D29B80D97006045F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F8619C29B80D97006045F1 /* ViewController.swift */; };
@@ -23,10 +39,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E74798C329BFC965009D8122 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		E74798C529BFCDF9009D8122 /* MainScrenCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScrenCardView.swift; sourceTree = "<group>"; };
+		E74798C729BFE16A009D8122 /* AddDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDataViewController.swift; sourceTree = "<group>"; };
+		E74798E029BFE5B9009D8122 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E751CAF029BCBD5400C7815E /* CustomOptionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOptionButton.swift; sourceTree = "<group>"; };
 		E796404229BBEAFA00C10B0D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		E7AFCAB629B8B88700962FEB /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		E7AFCAB829B8B8A000962FEB /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		E7E97D2E29BD19C5001F3C32 /* WordCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCardView.swift; sourceTree = "<group>"; };
 		E7F8619529B80D97006045F1 /* Word-Quiz-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Word-Quiz-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7F8619829B80D97006045F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7F8619A29B80D97006045F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +66,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E74798DF29BFE4CC009D8122 /* FirebaseStorageCombine-Community in Frameworks */,
+				E74798D129BFE4CC009D8122 /* FirebaseDatabaseSwift in Frameworks */,
+				E74798CF29BFE4CC009D8122 /* FirebaseDatabase in Frameworks */,
+				E74798DB29BFE4CC009D8122 /* FirebaseFunctionsCombine-Community in Frameworks */,
+				E74798DD29BFE4CC009D8122 /* FirebaseStorage in Frameworks */,
+				E74798CB29BFE4CC009D8122 /* FirebaseAuth in Frameworks */,
+				E74798D929BFE4CC009D8122 /* FirebaseFunctions in Frameworks */,
+				E74798D729BFE4CC009D8122 /* FirebaseFirestoreSwift in Frameworks */,
+				E74798D529BFE4CC009D8122 /* FirebaseFirestoreCombine-Community in Frameworks */,
+				E74798D329BFE4CC009D8122 /* FirebaseFirestore in Frameworks */,
+				E74798CD29BFE4CC009D8122 /* FirebaseAuthCombine-Community in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +96,7 @@
 		E751CAEC29BCBC6200C7815E /* LoginScreenViews */ = {
 			isa = PBXGroup;
 			children = (
+				E7F861AC29B80DEC006045F1 /* LoginScreen.swift */,
 				E7F861AE29B80E30006045F1 /* LoginView.swift */,
 				E7F861B029B80F95006045F1 /* SignUpView.swift */,
 			);
@@ -73,8 +106,10 @@
 		E751CAED29BCBC7800C7815E /* CardView */ = {
 			isa = PBXGroup;
 			children = (
+				E7F8619C29B80D97006045F1 /* ViewController.swift */,
 				E796404229BBEAFA00C10B0D /* CardView.swift */,
 				E751CAF029BCBD5400C7815E /* CustomOptionButton.swift */,
+				E7E97D2E29BD19C5001F3C32 /* WordCardView.swift */,
 			);
 			path = CardView;
 			sourceTree = "<group>";
@@ -91,8 +126,9 @@
 		E751CAEF29BCBC9600C7815E /* Screen */ = {
 			isa = PBXGroup;
 			children = (
-				E7F8619C29B80D97006045F1 /* ViewController.swift */,
-				E7F861AC29B80DEC006045F1 /* LoginScreen.swift */,
+				E74798C329BFC965009D8122 /* MainScreen.swift */,
+				E74798C529BFCDF9009D8122 /* MainScrenCardView.swift */,
+				E74798C729BFE16A009D8122 /* AddDataViewController.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -100,6 +136,7 @@
 		E7F8618C29B80D97006045F1 = {
 			isa = PBXGroup;
 			children = (
+				E74798E029BFE5B9009D8122 /* GoogleService-Info.plist */,
 				E751CAEF29BCBC9600C7815E /* Screen */,
 				E751CAEB29BCBC4300C7815E /* Views */,
 				E7F8619629B80D97006045F1 /* Products */,
@@ -144,6 +181,19 @@
 			dependencies = (
 			);
 			name = "Word-Quiz-App";
+			packageProductDependencies = (
+				E74798CA29BFE4CC009D8122 /* FirebaseAuth */,
+				E74798CC29BFE4CC009D8122 /* FirebaseAuthCombine-Community */,
+				E74798CE29BFE4CC009D8122 /* FirebaseDatabase */,
+				E74798D029BFE4CC009D8122 /* FirebaseDatabaseSwift */,
+				E74798D229BFE4CC009D8122 /* FirebaseFirestore */,
+				E74798D429BFE4CC009D8122 /* FirebaseFirestoreCombine-Community */,
+				E74798D629BFE4CC009D8122 /* FirebaseFirestoreSwift */,
+				E74798D829BFE4CC009D8122 /* FirebaseFunctions */,
+				E74798DA29BFE4CC009D8122 /* FirebaseFunctionsCombine-Community */,
+				E74798DC29BFE4CC009D8122 /* FirebaseStorage */,
+				E74798DE29BFE4CC009D8122 /* FirebaseStorageCombine-Community */,
+			);
 			productName = "Word-Quiz-App";
 			productReference = E7F8619529B80D97006045F1 /* Word-Quiz-App.app */;
 			productType = "com.apple.product-type.application";
@@ -172,6 +222,9 @@
 				Base,
 			);
 			mainGroup = E7F8618C29B80D97006045F1;
+			packageReferences = (
+				E74798C929BFE4CC009D8122 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = E7F8619629B80D97006045F1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -188,6 +241,7 @@
 			files = (
 				E7F861A529B80D98006045F1 /* LaunchScreen.storyboard in Resources */,
 				E7F861A229B80D98006045F1 /* Assets.xcassets in Resources */,
+				E74798E129BFE5BA009D8122 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,9 +255,13 @@
 				E7F861B329B81F41006045F1 /* Ext+UIVIEW.swift in Sources */,
 				E7F8619D29B80D97006045F1 /* ViewController.swift in Sources */,
 				E7F861AD29B80DEC006045F1 /* LoginScreen.swift in Sources */,
+				E74798C629BFCDF9009D8122 /* MainScrenCardView.swift in Sources */,
+				E74798C829BFE16A009D8122 /* AddDataViewController.swift in Sources */,
 				E7F8619929B80D97006045F1 /* AppDelegate.swift in Sources */,
 				E796404329BBEAFA00C10B0D /* CardView.swift in Sources */,
+				E74798C429BFC965009D8122 /* MainScreen.swift in Sources */,
 				E7AFCAB729B8B88700962FEB /* CustomButton.swift in Sources */,
+				E7E97D2F29BD19C5001F3C32 /* WordCardView.swift in Sources */,
 				E751CAF129BCBD5400C7815E /* CustomOptionButton.swift in Sources */,
 				E7F861AF29B80E30006045F1 /* LoginView.swift in Sources */,
 				E7F861B129B80F95006045F1 /* SignUpView.swift in Sources */,
@@ -349,7 +407,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Word-Quiz-App/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = Animations;
+				INFOPLIST_KEY_CFBundleDisplayName = "word-quiz-app";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -359,7 +417,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kromatin.Animations;
+				PRODUCT_BUNDLE_IDENTIFIER = "kromatin.word-quiz-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -376,7 +434,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Word-Quiz-App/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = Animations;
+				INFOPLIST_KEY_CFBundleDisplayName = "word-quiz-app";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -386,7 +444,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kromatin.Animations;
+				PRODUCT_BUNDLE_IDENTIFIER = "kromatin.word-quiz-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -416,6 +474,75 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E74798C929BFE4CC009D8122 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E74798CA29BFE4CC009D8122 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E74798C929BFE4CC009D8122 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		E74798CC29BFE4CC009D8122 /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E74798C929BFE4CC009D8122 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		E74798CE29BFE4CC009D8122 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E74798C929BFE4CC009D8122 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		E74798D029BFE4CC009D8122 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E74798C929BFE4CC009D8122 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		E74798D229BFE4CC009D8122 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E74798C929BFE4CC009D8122 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		E74798D429BFE4CC009D8122 /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E74798C929BFE4CC009D8122 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		E74798D629BFE4CC009D8122 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E74798C929BFE4CC009D8122 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		E74798D829BFE4CC009D8122 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E74798C929BFE4CC009D8122 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		E74798DA29BFE4CC009D8122 /* FirebaseFunctionsCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E74798C929BFE4CC009D8122 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFunctionsCombine-Community";
+		};
+		E74798DC29BFE4CC009D8122 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E74798C929BFE4CC009D8122 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		E74798DE29BFE4CC009D8122 /* FirebaseStorageCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E74798C929BFE4CC009D8122 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageCombine-Community";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E7F8618D29B80D97006045F1 /* Project object */;
 }

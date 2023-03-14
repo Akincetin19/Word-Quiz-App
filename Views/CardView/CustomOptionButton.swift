@@ -17,7 +17,7 @@ class CustomOptionButton: UIButton {
         self.title = title
        
         super.init(frame: .zero)
-        layer.cornerRadius = 8
+        layer.cornerRadius = 16
         setTitleColor(.black, for: .normal)
         setTitle(title, for: .normal)
         backgroundColor = .white
