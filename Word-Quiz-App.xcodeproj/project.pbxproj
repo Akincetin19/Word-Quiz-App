@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E7171EE929C3B48A004040C1 /* ModeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7171EE829C3B48A004040C1 /* ModeEnum.swift */; };
 		E74798C429BFC965009D8122 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74798C329BFC965009D8122 /* MainScreen.swift */; };
 		E74798C629BFCDF9009D8122 /* MainScrenCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74798C529BFCDF9009D8122 /* MainScrenCardView.swift */; };
 		E74798C829BFE16A009D8122 /* AddDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74798C729BFE16A009D8122 /* AddDataViewController.swift */; };
@@ -23,7 +24,7 @@
 		E74798DF29BFE4CC009D8122 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = E74798DE29BFE4CC009D8122 /* FirebaseStorageCombine-Community */; };
 		E74798E129BFE5BA009D8122 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E74798E029BFE5B9009D8122 /* GoogleService-Info.plist */; };
 		E751CAF129BCBD5400C7815E /* CustomOptionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E751CAF029BCBD5400C7815E /* CustomOptionButton.swift */; };
-		E7849A1529C0B4AB003A3C90 /* TestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7849A1429C0B4AB003A3C90 /* TestViewModel.swift */; };
+		E7849A1529C0B4AB003A3C90 /* QuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7849A1429C0B4AB003A3C90 /* QuestionViewModel.swift */; };
 		E7849A1729C0B78C003A3C90 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7849A1629C0B78C003A3C90 /* Bindable.swift */; };
 		E7849A1A29C0BE41003A3C90 /* QuestionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7849A1929C0BE41003A3C90 /* QuestionsService.swift */; };
 		E7849A1D29C0C62D003A3C90 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7849A1C29C0C62D003A3C90 /* Question.swift */; };
@@ -53,12 +54,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E7171EE829C3B48A004040C1 /* ModeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeEnum.swift; sourceTree = "<group>"; };
 		E74798C329BFC965009D8122 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		E74798C529BFCDF9009D8122 /* MainScrenCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScrenCardView.swift; sourceTree = "<group>"; };
 		E74798C729BFE16A009D8122 /* AddDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDataViewController.swift; sourceTree = "<group>"; };
 		E74798E029BFE5B9009D8122 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E751CAF029BCBD5400C7815E /* CustomOptionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOptionButton.swift; sourceTree = "<group>"; };
-		E7849A1429C0B4AB003A3C90 /* TestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewModel.swift; sourceTree = "<group>"; };
+		E7849A1429C0B4AB003A3C90 /* QuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewModel.swift; sourceTree = "<group>"; };
 		E7849A1629C0B78C003A3C90 /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
 		E7849A1929C0BE41003A3C90 /* QuestionsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsService.swift; sourceTree = "<group>"; };
 		E7849A1C29C0C62D003A3C90 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
@@ -139,7 +141,7 @@
 				E796404229BBEAFA00C10B0D /* CardView.swift */,
 				E751CAF029BCBD5400C7815E /* CustomOptionButton.swift */,
 				E7E97D2E29BD19C5001F3C32 /* WordCardView.swift */,
-				E7849A1429C0B4AB003A3C90 /* TestViewModel.swift */,
+				E7849A1429C0B4AB003A3C90 /* QuestionViewModel.swift */,
 			);
 			path = CardView;
 			sourceTree = "<group>";
@@ -191,6 +193,7 @@
 				E7CC1BA129C28EE300EAECA2 /* celebration.json */,
 				E7F861B229B81F41006045F1 /* Ext+UIVIEW.swift */,
 				E7EDE3BC29C2490D008BEBE1 /* Ext+UIViewController.swift */,
+				E7171EE829C3B48A004040C1 /* ModeEnum.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7171EE929C3B48A004040C1 /* ModeEnum.swift in Sources */,
 				E7F861B329B81F41006045F1 /* Ext+UIVIEW.swift in Sources */,
 				E7F8619D29B80D97006045F1 /* ViewController.swift in Sources */,
 				E7EDE3BA29C23AD2008BEBE1 /* LoginScreenViewModel.swift in Sources */,
@@ -339,7 +343,7 @@
 				E7EDE3BD29C2490D008BEBE1 /* Ext+UIViewController.swift in Sources */,
 				E7AFCAB729B8B88700962FEB /* CustomButton.swift in Sources */,
 				E7E97D2F29BD19C5001F3C32 /* WordCardView.swift in Sources */,
-				E7849A1529C0B4AB003A3C90 /* TestViewModel.swift in Sources */,
+				E7849A1529C0B4AB003A3C90 /* QuestionViewModel.swift in Sources */,
 				E7849A1D29C0C62D003A3C90 /* Question.swift in Sources */,
 				E751CAF129BCBD5400C7815E /* CustomOptionButton.swift in Sources */,
 				E7F861AF29B80E30006045F1 /* LoginView.swift in Sources */,

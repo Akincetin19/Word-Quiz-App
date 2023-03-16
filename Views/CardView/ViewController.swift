@@ -31,19 +31,17 @@ final class ViewController: UIViewController {
     private var views: [CardView] = []
     private var panGesture: UITapGestureRecognizer!
     
-    private var viewModel = TestViewModel()
-    
+    private var viewModel = QuestionViewModel()
     var isAnswerQuestion: Bindable<String> = Bindable<String>()
-    
-    
     private var backButtonImage: UIImageView = {
        
         let imgView = UIImageView(frame: .zero)
         imgView.image = UIImage(systemName: "chevron.left.circle.fill")?.withTintColor(UIColor.init(red: 255/255, green: 123/255, blue: 84/255, alpha: 1), renderingMode: .alwaysOriginal)
         return imgView
     }()
-    init(user: User) {
+    init(user: User, mode: Mode) {
         viewModel.user = user
+        viewModel.mode = mode
         super.init(nibName: nil, bundle: nil)
     }
     required init?(coder: NSCoder) {
@@ -121,7 +119,6 @@ final class ViewController: UIViewController {
         let dialogMessage = UIAlertController(title: "Tebrikler Level Atladınız", message: "Yeni Soruları Görmek İstiyor Musunuz", preferredStyle: .alert)
         let yes = UIAlertAction(title: "Evet", style: .default) { [weak self] (_) in
             guard let self = self else {return}
-            
             self.viewModel.viewDidLoad()
         }
         let no = UIAlertAction(title: "Hayır", style: .default) { [weak self] (_) in
@@ -216,7 +213,10 @@ extension ViewController: TestScreenProtocol {
             self.view.willRemoveSubview(lootieAnimation)
             lootieAnimation.removeFromSuperview()
             
-            self.handleFinishAlert()
+            if self.viewModel.mode == .Learn {
+                self.handleFinishAlert()
+            }
+            
         }
     }
     

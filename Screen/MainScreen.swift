@@ -38,9 +38,17 @@ final class MainScreen: UIViewController {
     deinit {
         print("Main Screen Deinit")
     }
+    @objc func goToLearnPage() {
+
+        navigationController?.pushViewController(ViewController(user: user ?? User(), mode: .Learn), animated: true)
+    }
     @objc func goToTestPage() {
 
-        navigationController?.pushViewController(ViewController(user: user ?? User()), animated: true)
+        navigationController?.pushViewController(ViewController(user: user ?? User(), mode: .Test), animated: true)
+    }
+    @objc func goToReviewPage() {
+
+        navigationController?.pushViewController(ViewController(user: user ?? User(), mode: .Review), animated: true)
     }
     fileprivate func addCardAnimations() {
         
@@ -56,12 +64,8 @@ final class MainScreen: UIViewController {
         animation.loopMode = .loop
         animation.animationSpeed = 1.5
         cardView.addSubview(animation)
-        
         animation.play()
-        
-        
     }
-    
     fileprivate func addGradientLayer() {
         let firstColor = CGColor.init(red: 255/255, green: 123/255, blue: 84/255, alpha: 1)
         let secondColor = CGColor.init(red: 147/255, green: 155/255, blue: 98/255, alpha: 1)
@@ -81,6 +85,7 @@ extension MainScreen: MainScreenProtocol {
     }
     
     func configureView() {
+        var gesture : UITapGestureRecognizer
         view.backgroundColor = UIColor.init(red: 210/255, green: 123/255, blue: 84/255, alpha: 1)
         view.addSubview(learnCardView)
         view.addSubview(testCardView)
@@ -91,8 +96,14 @@ extension MainScreen: MainScreenProtocol {
         learnCardView.frame = frame
         testCardView.frame = CGRect(x: 16, y: learnCardView.frame.maxY + 16, width: width, height: height)
         reviewCardView.frame = CGRect(x: 16, y: testCardView.frame.maxY + 16, width: width, height: height)
-        let gesture = UITapGestureRecognizer(target: self, action: #selector(goToTestPage))
+        gesture = UITapGestureRecognizer(target: self, action: #selector(goToLearnPage))
         learnCardView.addGestureRecognizer(gesture)
+        gesture = UITapGestureRecognizer(target: self, action: #selector(goToTestPage))
+        testCardView.addGestureRecognizer(gesture)
+        gesture = UITapGestureRecognizer(target: self, action: #selector(goToReviewPage))
+        reviewCardView.addGestureRecognizer(gesture)
+        
+        
         addGradientLayer()
     }
     func configureCards(user: User) {
