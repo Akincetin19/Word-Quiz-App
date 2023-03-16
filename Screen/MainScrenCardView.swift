@@ -8,16 +8,18 @@
 import UIKit
 
 final class MainScrenCardView: UIView {
-
-   
+    
+    
+    
     var cardName: String
     var cardInfo: String
     
     lazy var cardNameLabel = UILabel(frame: .zero)
     lazy var cardInfoLabel = UILabel(frame: .zero)
-
+    lazy var animationView = UIView(frame: .zero)
+    
     init(cardName: String, cardInfo: String) {
-       
+        
         self.cardName = cardName
         self.cardInfo = cardInfo
         super.init(frame: .zero)
@@ -28,6 +30,10 @@ final class MainScrenCardView: UIView {
         layer.cornerRadius = 16
         configureCardNameLabel()
         configureCardInfoLabel()
+        
+        addSubview(animationView)
+        animationView.frame = CGRect(x: 250, y: 0, width: 100, height: 100)
+        
     }
     
     private func configureCardNameLabel() {
@@ -48,4 +54,5 @@ final class MainScrenCardView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
 }

@@ -7,7 +7,14 @@
 
 import UIKit
 
-class LoginScreen: UIViewController {
+protocol LoginScreenProtocol: AnyObject {
+    
+    func configureView()
+    func makeAlert(error: Error)
+    func goToMainPage()
+}
+
+final class LoginScreen: UIViewController {
 
     //MARK: -> Views
     let loginView = LoginView(frame: .zero)
@@ -15,60 +22,15 @@ class LoginScreen: UIViewController {
     let padding : CGFloat = 35
     
     var widthConstraint: NSLayoutConstraint!
+    private var viewModel = LoginScreenViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureSignUpView() 
-        configureView()
-    }
-    //MARK: -> ConfigureView
-    fileprivate func configureView() {
-        view.backgroundColor = .white
-        view.addSubview(loginView)
-        
-        loginView.centerInSuperview(size: .init(width: view.frame.width - 50, height: view.frame.height - 150))
-        loginView.signUpButton.addTarget(self, action: #selector(self.makeAnimation(sender:)), for: .touchUpInside)
-        loginView.configureStackView()
-        loginView.loginButton.addTarget(self, action: #selector(goToMainPage), for: .touchUpInside)
+        viewModel.view = self
+        viewModel.viewDidLoad()
         
     }
-    fileprivate func configureSignUpView() {
-        view.addSubview(signUpView)
-        NSLayoutConstraint.activate([
-            signUpView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: padding),
-            signUpView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            signUpView.heightAnchor.constraint(equalToConstant: view.frame.height - 150),
-            signUpView.widthAnchor.constraint(equalToConstant: 343)
-        ])
-        
-        view.layoutIfNeeded()
-        signUpView.configureStackView()
-        //    signUpView.updateConstraints()
-        signUpView.loginButton.addTarget(self, action: #selector(self.makeAnimation(sender:)), for: .touchUpInside)
-        
-        /*
-        signUpView.removeConstraints(signUpView.constraints)
-        
-        
-        NSLayoutConstraint.activate([
-            signUpView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: padding),
-            signUpView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            signUpView.heightAnchor.constraint(equalToConstant: view.frame.height - 150),
-            signUpView.widthAnchor.constraint(equalToConstant: 323)
-        ])
-      */
-        UIView.animate(withDuration: 0.3) {
-            self.view.layoutIfNeeded()
-        }
-        
-    }
-    @objc func goToMainPage() {
-        let vc = ViewController()
-        vc.modalPresentationStyle = .fullScreen
-        
-        present(vc, animated: true)
-    }
-    
+
     //MARK: -> ANIMATIONS
     @objc fileprivate func makeAnimation(sender: UIButton) {
         
@@ -87,6 +49,9 @@ class LoginScreen: UIViewController {
             }
         }
     }
+    deinit {
+        print("")
+    }
     fileprivate func makeAnimationLeftRight(scale1: CGFloat) {
         
         self.loginView.transform = self.loginView.transform.translatedBy(x: scale1, y: 0)
@@ -102,4 +67,60 @@ class LoginScreen: UIViewController {
         self.loginView.isUserInteractionEnabled = scale1 <= 0
         self.signUpView.isUserInteractionEnabled = scale1 > 0
     }
+    func addTarget() {
+        loginView.loginButton.addTarget(self, action: #selector(logIn(sender:)), for: .touchUpInside)
+        signUpView.loginButton.addTarget(self, action: #selector(self.makeAnimation(sender:)), for: .touchUpInside)
+        loginView.signUpButton.addTarget(self, action: #selector(self.makeAnimation(sender:)), for: .touchUpInside)
+        signUpView.signUpButton.addTarget(self, action: #selector(createUser(sender:)), for: .touchUpInside)
+    }
+    @objc func createUser(sender: UIButton) {
+        
+        viewModel.createUSer(email: signUpView.emailTextField.text!, name: signUpView.nameTextField.text!, surname: signUpView.surnameTextField.text!, password: signUpView.passwordTextField.text!)
+    }
+    @objc func logIn(sender: UIButton) {
+        
+        viewModel.logIn(email: loginView.emailTextField.text!, password: loginView.passwordTextField.text!)
+    }
+    func configureSignUpView() {
+        view.addSubview(signUpView)
+        NSLayoutConstraint.activate([
+            signUpView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: padding),
+            signUpView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            signUpView.heightAnchor.constraint(equalToConstant: view.frame.height - 150),
+            signUpView.widthAnchor.constraint(equalToConstant: 343)
+        ])
+        
+        view.layoutIfNeeded()
+        signUpView.configureStackView()
+        //    signUpView.updateConstraints()
+        
+        UIView.animate(withDuration: 0.3) {
+            self.view.layoutIfNeeded()
+        }
+    }
+    func configureLoginView() {
+        view.backgroundColor = .white
+        view.addSubview(loginView)
+        loginView.centerInSuperview(size: .init(width: view.frame.width - 50, height: view.frame.height - 150))
+        loginView.configureStackView()
+        loginView.isUserInteractionEnabled = true
+        loginView.stackView.isUserInteractionEnabled = true
+        addTarget()
+    }
+}
+extension LoginScreen: LoginScreenProtocol {
+    func makeAlert(error: Error) {
+        self.makeAlert(view: self, error: error)
+    }
+    func configureView() {
+        configureSignUpView()
+        configureLoginView()
+    }
+    func goToMainPage() {
+        
+        let vc = MainScreen()
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
+    }
+    
 }

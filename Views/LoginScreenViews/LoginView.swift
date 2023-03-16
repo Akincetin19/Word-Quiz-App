@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginView: UIView {
+final class LoginView: UIView {
 
     lazy var loginButton = CustomLoginButton(title: "Giriş Yap", color: .blue)
     lazy var signUpButton = CustomLoginButton(title: "Kayıt Ol", color: .red)
@@ -44,6 +44,7 @@ class LoginView: UIView {
         stackView.spacing = 30
         stackView.anchor(top: label.bottomAnchor, leading: leadingAnchor, bottom: nil, trailing: trailingAnchor, padding: .init(top: 32, left: 32, bottom: 0, right: 32))
         stackView.isUserInteractionEnabled = true
+        
     }
 }
 

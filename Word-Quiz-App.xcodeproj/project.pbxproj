@@ -23,10 +23,24 @@
 		E74798DF29BFE4CC009D8122 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = E74798DE29BFE4CC009D8122 /* FirebaseStorageCombine-Community */; };
 		E74798E129BFE5BA009D8122 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E74798E029BFE5B9009D8122 /* GoogleService-Info.plist */; };
 		E751CAF129BCBD5400C7815E /* CustomOptionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E751CAF029BCBD5400C7815E /* CustomOptionButton.swift */; };
+		E7849A1529C0B4AB003A3C90 /* TestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7849A1429C0B4AB003A3C90 /* TestViewModel.swift */; };
+		E7849A1729C0B78C003A3C90 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7849A1629C0B78C003A3C90 /* Bindable.swift */; };
+		E7849A1A29C0BE41003A3C90 /* QuestionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7849A1929C0BE41003A3C90 /* QuestionsService.swift */; };
+		E7849A1D29C0C62D003A3C90 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7849A1C29C0C62D003A3C90 /* Question.swift */; };
 		E796404329BBEAFA00C10B0D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E796404229BBEAFA00C10B0D /* CardView.swift */; };
 		E7AFCAB729B8B88700962FEB /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AFCAB629B8B88700962FEB /* CustomButton.swift */; };
 		E7AFCAB929B8B8A000962FEB /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AFCAB829B8B8A000962FEB /* CustomTextField.swift */; };
+		E7C5228A29C0E7C10036FCBE /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C5228929C0E7C10036FCBE /* AuthService.swift */; };
+		E7C5228C29C0E8CA0036FCBE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C5228B29C0E8CA0036FCBE /* User.swift */; };
+		E7CC1BA029C28DA300EAECA2 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E7CC1B9F29C28DA300EAECA2 /* Lottie */; };
+		E7CC1BA229C28EE300EAECA2 /* celebration.json in Resources */ = {isa = PBXBuildFile; fileRef = E7CC1BA129C28EE300EAECA2 /* celebration.json */; };
+		E7CC1BA429C2A84300EAECA2 /* Test Et.json in Resources */ = {isa = PBXBuildFile; fileRef = E7CC1BA329C2A84300EAECA2 /* Test Et.json */; };
+		E7CC1BA829C2AC1C00EAECA2 /* Gözden Geçir.json in Resources */ = {isa = PBXBuildFile; fileRef = E7CC1BA629C2AC1C00EAECA2 /* Gözden Geçir.json */; };
+		E7CC1BAC29C2B0E400EAECA2 /* lookOver.json in Resources */ = {isa = PBXBuildFile; fileRef = E7CC1BAB29C2B0E400EAECA2 /* lookOver.json */; };
 		E7E97D2F29BD19C5001F3C32 /* WordCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E97D2E29BD19C5001F3C32 /* WordCardView.swift */; };
+		E7EDE3BA29C23AD2008BEBE1 /* LoginScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EDE3B929C23AD2008BEBE1 /* LoginScreenViewModel.swift */; };
+		E7EDE3BD29C2490D008BEBE1 /* Ext+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EDE3BC29C2490D008BEBE1 /* Ext+UIViewController.swift */; };
+		E7EDE3BF29C24F24008BEBE1 /* MainScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EDE3BE29C24F24008BEBE1 /* MainScreenViewModel.swift */; };
 		E7F8619929B80D97006045F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F8619829B80D97006045F1 /* AppDelegate.swift */; };
 		E7F8619B29B80D97006045F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F8619A29B80D97006045F1 /* SceneDelegate.swift */; };
 		E7F8619D29B80D97006045F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F8619C29B80D97006045F1 /* ViewController.swift */; };
@@ -44,10 +58,23 @@
 		E74798C729BFE16A009D8122 /* AddDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDataViewController.swift; sourceTree = "<group>"; };
 		E74798E029BFE5B9009D8122 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E751CAF029BCBD5400C7815E /* CustomOptionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOptionButton.swift; sourceTree = "<group>"; };
+		E7849A1429C0B4AB003A3C90 /* TestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewModel.swift; sourceTree = "<group>"; };
+		E7849A1629C0B78C003A3C90 /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		E7849A1929C0BE41003A3C90 /* QuestionsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsService.swift; sourceTree = "<group>"; };
+		E7849A1C29C0C62D003A3C90 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		E796404229BBEAFA00C10B0D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		E7AFCAB629B8B88700962FEB /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		E7AFCAB829B8B8A000962FEB /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		E7C5228929C0E7C10036FCBE /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		E7C5228B29C0E8CA0036FCBE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E7CC1BA129C28EE300EAECA2 /* celebration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = celebration.json; sourceTree = "<group>"; };
+		E7CC1BA329C2A84300EAECA2 /* Test Et.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Test Et.json"; sourceTree = "<group>"; };
+		E7CC1BA629C2AC1C00EAECA2 /* Gözden Geçir.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Gözden Geçir.json"; sourceTree = "<group>"; };
+		E7CC1BAB29C2B0E400EAECA2 /* lookOver.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lookOver.json; sourceTree = "<group>"; };
 		E7E97D2E29BD19C5001F3C32 /* WordCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCardView.swift; sourceTree = "<group>"; };
+		E7EDE3B929C23AD2008BEBE1 /* LoginScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewModel.swift; sourceTree = "<group>"; };
+		E7EDE3BC29C2490D008BEBE1 /* Ext+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIViewController.swift"; sourceTree = "<group>"; };
+		E7EDE3BE29C24F24008BEBE1 /* MainScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewModel.swift; sourceTree = "<group>"; };
 		E7F8619529B80D97006045F1 /* Word-Quiz-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Word-Quiz-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7F8619829B80D97006045F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7F8619A29B80D97006045F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +104,7 @@
 				E74798D529BFE4CC009D8122 /* FirebaseFirestoreCombine-Community in Frameworks */,
 				E74798D329BFE4CC009D8122 /* FirebaseFirestore in Frameworks */,
 				E74798CD29BFE4CC009D8122 /* FirebaseAuthCombine-Community in Frameworks */,
+				E7CC1BA029C28DA300EAECA2 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +127,7 @@
 				E7F861AC29B80DEC006045F1 /* LoginScreen.swift */,
 				E7F861AE29B80E30006045F1 /* LoginView.swift */,
 				E7F861B029B80F95006045F1 /* SignUpView.swift */,
+				E7EDE3B929C23AD2008BEBE1 /* LoginScreenViewModel.swift */,
 			);
 			path = LoginScreenViews;
 			sourceTree = "<group>";
@@ -110,6 +139,7 @@
 				E796404229BBEAFA00C10B0D /* CardView.swift */,
 				E751CAF029BCBD5400C7815E /* CustomOptionButton.swift */,
 				E7E97D2E29BD19C5001F3C32 /* WordCardView.swift */,
+				E7849A1429C0B4AB003A3C90 /* TestViewModel.swift */,
 			);
 			path = CardView;
 			sourceTree = "<group>";
@@ -129,13 +159,49 @@
 				E74798C329BFC965009D8122 /* MainScreen.swift */,
 				E74798C529BFCDF9009D8122 /* MainScrenCardView.swift */,
 				E74798C729BFE16A009D8122 /* AddDataViewController.swift */,
+				E7EDE3BE29C24F24008BEBE1 /* MainScreenViewModel.swift */,
 			);
 			path = Screen;
+			sourceTree = "<group>";
+		};
+		E7849A1829C0BE32003A3C90 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E7849A1929C0BE41003A3C90 /* QuestionsService.swift */,
+				E7C5228929C0E7C10036FCBE /* AuthService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		E7849A1B29C0C623003A3C90 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E7849A1C29C0C62D003A3C90 /* Question.swift */,
+				E7C5228B29C0E8CA0036FCBE /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E7EDE3BB29C248F7008BEBE1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E7CC1BAB29C2B0E400EAECA2 /* lookOver.json */,
+				E7CC1BA629C2AC1C00EAECA2 /* Gözden Geçir.json */,
+				E7CC1BA329C2A84300EAECA2 /* Test Et.json */,
+				E7CC1BA129C28EE300EAECA2 /* celebration.json */,
+				E7F861B229B81F41006045F1 /* Ext+UIVIEW.swift */,
+				E7EDE3BC29C2490D008BEBE1 /* Ext+UIViewController.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		E7F8618C29B80D97006045F1 = {
 			isa = PBXGroup;
 			children = (
+				E7EDE3BB29C248F7008BEBE1 /* Extensions */,
+				E7849A1B29C0C623003A3C90 /* Model */,
+				E7849A1829C0BE32003A3C90 /* Service */,
+				E7849A1629C0B78C003A3C90 /* Bindable.swift */,
 				E74798E029BFE5B9009D8122 /* GoogleService-Info.plist */,
 				E751CAEF29BCBC9600C7815E /* Screen */,
 				E751CAEB29BCBC4300C7815E /* Views */,
@@ -160,7 +226,6 @@
 				E7F861A129B80D98006045F1 /* Assets.xcassets */,
 				E7F861A329B80D98006045F1 /* LaunchScreen.storyboard */,
 				E7F861A629B80D98006045F1 /* Info.plist */,
-				E7F861B229B81F41006045F1 /* Ext+UIVIEW.swift */,
 			);
 			path = "Word-Quiz-App";
 			sourceTree = "<group>";
@@ -193,6 +258,7 @@
 				E74798DA29BFE4CC009D8122 /* FirebaseFunctionsCombine-Community */,
 				E74798DC29BFE4CC009D8122 /* FirebaseStorage */,
 				E74798DE29BFE4CC009D8122 /* FirebaseStorageCombine-Community */,
+				E7CC1B9F29C28DA300EAECA2 /* Lottie */,
 			);
 			productName = "Word-Quiz-App";
 			productReference = E7F8619529B80D97006045F1 /* Word-Quiz-App.app */;
@@ -224,6 +290,7 @@
 			mainGroup = E7F8618C29B80D97006045F1;
 			packageReferences = (
 				E74798C929BFE4CC009D8122 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				E7CC1B9E29C28DA300EAECA2 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = E7F8619629B80D97006045F1 /* Products */;
 			projectDirPath = "";
@@ -239,8 +306,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7CC1BA829C2AC1C00EAECA2 /* Gözden Geçir.json in Resources */,
+				E7CC1BA229C28EE300EAECA2 /* celebration.json in Resources */,
+				E7CC1BA429C2A84300EAECA2 /* Test Et.json in Resources */,
 				E7F861A529B80D98006045F1 /* LaunchScreen.storyboard in Resources */,
 				E7F861A229B80D98006045F1 /* Assets.xcassets in Resources */,
+				E7CC1BAC29C2B0E400EAECA2 /* lookOver.json in Resources */,
 				E74798E129BFE5BA009D8122 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,19 +325,28 @@
 			files = (
 				E7F861B329B81F41006045F1 /* Ext+UIVIEW.swift in Sources */,
 				E7F8619D29B80D97006045F1 /* ViewController.swift in Sources */,
+				E7EDE3BA29C23AD2008BEBE1 /* LoginScreenViewModel.swift in Sources */,
 				E7F861AD29B80DEC006045F1 /* LoginScreen.swift in Sources */,
 				E74798C629BFCDF9009D8122 /* MainScrenCardView.swift in Sources */,
+				E7EDE3BF29C24F24008BEBE1 /* MainScreenViewModel.swift in Sources */,
 				E74798C829BFE16A009D8122 /* AddDataViewController.swift in Sources */,
 				E7F8619929B80D97006045F1 /* AppDelegate.swift in Sources */,
+				E7849A1729C0B78C003A3C90 /* Bindable.swift in Sources */,
+				E7C5228A29C0E7C10036FCBE /* AuthService.swift in Sources */,
 				E796404329BBEAFA00C10B0D /* CardView.swift in Sources */,
 				E74798C429BFC965009D8122 /* MainScreen.swift in Sources */,
+				E7849A1A29C0BE41003A3C90 /* QuestionsService.swift in Sources */,
+				E7EDE3BD29C2490D008BEBE1 /* Ext+UIViewController.swift in Sources */,
 				E7AFCAB729B8B88700962FEB /* CustomButton.swift in Sources */,
 				E7E97D2F29BD19C5001F3C32 /* WordCardView.swift in Sources */,
+				E7849A1529C0B4AB003A3C90 /* TestViewModel.swift in Sources */,
+				E7849A1D29C0C62D003A3C90 /* Question.swift in Sources */,
 				E751CAF129BCBD5400C7815E /* CustomOptionButton.swift in Sources */,
 				E7F861AF29B80E30006045F1 /* LoginView.swift in Sources */,
 				E7F861B129B80F95006045F1 /* SignUpView.swift in Sources */,
 				E7F8619B29B80D97006045F1 /* SceneDelegate.swift in Sources */,
 				E7AFCAB929B8B8A000962FEB /* CustomTextField.swift in Sources */,
+				E7C5228C29C0E8CA0036FCBE /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +564,14 @@
 				kind = branch;
 			};
 		};
+		E7CC1B9E29C28DA300EAECA2 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -541,6 +629,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E74798C929BFE4CC009D8122 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseStorageCombine-Community";
+		};
+		E7CC1B9F29C28DA300EAECA2 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E7CC1B9E29C28DA300EAECA2 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

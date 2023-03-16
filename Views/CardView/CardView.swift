@@ -7,19 +7,18 @@
 
 import UIKit
 
-class CardView: UIView {
+final class CardView: UIView {
 
-    let optionA = CustomOptionButton(title: "A Şıkkı")
-    let optionB = CustomOptionButton(title: "B Şıkkı")
-    let optionC = CustomOptionButton(title: "C Şıkkı")
-    let optionD = CustomOptionButton(title: "D Şıkkı")
+    let optionA = CustomOptionButton(title: "")
+    let optionB = CustomOptionButton(title: "")
+    let optionC = CustomOptionButton(title: "")
+    let optionD = CustomOptionButton(title: "")
     let gradientLayer = CAGradientLayer()
     let wordView = WordCardView(frame: .zero)
     
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
         viewDidLoad()
     }
     required init?(coder: NSCoder) {
@@ -27,11 +26,12 @@ class CardView: UIView {
     }
     func viewDidLoad() {
         layer.cornerRadius = 32
-        backgroundColor = UIColor(red: 147/255, green: 125/255, blue: 194/255, alpha: 1)
+        backgroundColor = UIColor(red: 225/255, green: 215/255, blue: 198/255, alpha: 1)
         
         isUserInteractionEnabled = false
-        setupButtonsFrame()
+      
         setupGradientLayer()
+        setupButtonsFrame()
     }
     func setupGradientLayer() {
         
@@ -47,19 +47,18 @@ class CardView: UIView {
     }
     func setupCardViews(frame: CGRect, isUserInteractionEnable: Bool) {
         
-        
         self.frame = frame
         isUserInteractionEnabled = isUserInteractionEnable
         alpha = alpha * 2
         layer.zPosition = layer.zPosition * 2
         gradientLayer.frame = self.bounds
-     //   setupGradientLayer()
         setupButtonsFrame()
+        
     }
     func configureViewWhenCreated(isUserInteractionEnable: Bool, alpha: CGFloat, zPosition: CGFloat) {
         self.alpha = alpha
         self.layer.zPosition = zPosition
-        
+
     }
     func setupButtonsFrame() {
         addSubview(wordView)
@@ -72,6 +71,16 @@ class CardView: UIView {
         optionB.frame = CGRect(x: 32, y: optionA.frame.maxY + 16, width: frame.width - 64, height: 50)
         optionC.frame = CGRect(x: 32, y: optionB.frame.maxY + 16, width: frame.width - 64, height: 50)
         optionD.frame = CGRect(x: 32, y: optionC.frame.maxY + 16, width: frame.width - 64, height: 50)
+        
+    }
+    func setCards(question: Question) {
+     
+        
+        optionA.setTitle(question.options?.optionA, for: .normal)
+        optionB.setTitle(question.options?.optionB, for: .normal)
+        optionC.setTitle(question.options?.optionC, for: .normal)
+        optionD.setTitle(question.options?.optionD, for: .normal)
+        wordView.configureWordcardView(question: question)
         
     }
     

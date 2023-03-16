@@ -7,12 +7,12 @@
 
 import UIKit
 
-class WordCardView: UIView {
+final class WordCardView: UIView {
 
     
     var wordLabel: UILabel = {
         let label = UILabel(frame: .zero)
-        label.text = "Subscription"
+        label.text = ""
         label.textAlignment = .center
         label.textColor = .black
         label.font = UIFont.systemFont(ofSize: 30, weight: .bold)
@@ -20,10 +20,10 @@ class WordCardView: UIView {
     }()
     var sampleSenctencesLabel: UILabel = {
         let label = UILabel(frame: .zero)
-        label.text = "The newsletter is available only on subscription. \n \n He signed the letter and added a subscription"
+        label.text = ""
         label.textAlignment = .left
         label.textColor = .black
-        label.font = UIFont.systemFont(ofSize: 25, weight: .light)
+        label.font = UIFont.systemFont(ofSize: 20, weight: .light)
         label.numberOfLines = 0
         return label
     }()
@@ -40,6 +40,11 @@ class WordCardView: UIView {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    func configureWordcardView(question : Question) {
+        
+        wordLabel.text = question.wordName
+        sampleSenctencesLabel.text = "\(question.sampleSenctences1!) \n \n \(question.sampleSenctences2!)"
     }
     
 }

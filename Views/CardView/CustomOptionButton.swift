@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CustomOptionButton: UIButton {
+final class CustomOptionButton: UIButton {
 
     
     let title : String

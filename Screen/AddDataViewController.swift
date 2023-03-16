@@ -9,7 +9,7 @@ import UIKit
 import FirebaseFirestore
 import Firebase
 
-class AddDataViewController: UIViewController {
+final class AddDataViewController: UIViewController {
 
     
     lazy var wordName = CustomTextField(placeholderText: "word Name")
@@ -41,8 +41,13 @@ class AddDataViewController: UIViewController {
         
     }
     
+    deinit {
+        print("adpğspğdğpslğadlpğsadlağpdlğpasdğplağspdlğpasdl")
+    }
+    
     @objc func uploadData() {
 
+        /*
         Firestore.firestore().collection("Words").document("nXlYcGAy9H5ATEeLbzz0").collection("5").addDocument(data: ["wordName": wordName.text ?? "",
                                                                                                "sampleSenctences1": sampleSenctences1.text ?? "",
                                                                                                "sampleSenctences2": sampleSenctences2.text ?? "",
@@ -60,5 +65,14 @@ class AddDataViewController: UIViewController {
         optionC.text = ""
         optionD.text = ""
         coorectAnswer.text = ""
+         */
+        
+        let vc = MainScreen()
+        
+        vc.modalPresentationStyle = .fullScreen
+        
+        present(vc, animated: true)
+        
+        
     }
 }

@@ -6,27 +6,81 @@
 //
 
 import UIKit
+import Lottie
+protocol MainScreenProtocol: AnyObject {
+    
+    func configureView()
+    func configureCards(user: User)
+    func makeAlert(error: Error)
+}
 
-class MainScreen: UIViewController {
+final class MainScreen: UIViewController {
 
     let gradientLayer = CAGradientLayer()
-    private let learnCardView = MainScrenCardView(cardName: "Test Et", cardInfo: "%1 Tamamlandı")
-    private let testCardView = MainScrenCardView(cardName: "Gözden Geçir", cardInfo: "10 Yanlış yaptın")
-    private let reviewCardView = MainScrenCardView(cardName: "Tekrar Et", cardInfo: "38 Soruyu doğru yanıtladın")
-    
-    
+    private let learnCardView = MainScrenCardView(cardName: "Test Et", cardInfo: "")
+    private let testCardView = MainScrenCardView(cardName: "Tekrar Et", cardInfo: "")
+    private let reviewCardView = MainScrenCardView(cardName: "Gözden Geçir", cardInfo: "")
+    var learnCardAnimation = LottieAnimationView(name: "lookOver")
+    var testCardAnimation = LottieAnimationView(name: "Test Et")
+    var reviewCardAnimation = LottieAnimationView(name: "Gözden Geçir")
+    private var viewModel = MainScreenViewModel()
+    private var user: User?
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureView()
+        viewModel.view = self
+        
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        viewModel.viewDidLoad()
+        addCardAnimations()
+        
+    }
+    deinit {
+        print("Main Screen Deinit")
     }
     @objc func goToTestPage() {
-        let vc = ViewController()
-        
-        vc.modalPresentationStyle = .fullScreen
-        
-        present(vc, animated: true)
+
+        navigationController?.pushViewController(ViewController(user: user ?? User()), animated: true)
     }
-    fileprivate func configureView() {
+    fileprivate func addCardAnimations() {
+        
+        createLottieAnimation(cardView: learnCardView, animation: learnCardAnimation)
+        createLottieAnimation(cardView: reviewCardView, animation: reviewCardAnimation)
+        createLottieAnimation(cardView: testCardView, animation: testCardAnimation)
+        
+    }
+    fileprivate func createLottieAnimation(cardView: MainScrenCardView, animation: LottieAnimationView) {
+        
+        animation.frame = cardView.animationView.frame
+        animation.contentMode = .scaleAspectFit
+        animation.loopMode = .loop
+        animation.animationSpeed = 1.5
+        cardView.addSubview(animation)
+        
+        animation.play()
+        
+        
+    }
+    
+    fileprivate func addGradientLayer() {
+        let firstColor = CGColor.init(red: 255/255, green: 123/255, blue: 84/255, alpha: 1)
+        let secondColor = CGColor.init(red: 147/255, green: 155/255, blue: 98/255, alpha: 1)
+        gradientLayer.colors = [firstColor, secondColor]
+        gradientLayer.frame = view.bounds
+        gradientLayer.cornerRadius = 32
+        view.layer.insertSublayer(gradientLayer, at: 0)
+        gradientLayer.locations = [0.0, 0.75, 1.0]
+        gradientLayer.startPoint = CGPoint(x: 0.5, y: 0.0)
+        gradientLayer.endPoint = CGPoint(x: 0.5, y: 1.0)
+    }
+}
+
+extension MainScreen: MainScreenProtocol {
+    func makeAlert(error: Error) {
+        self.makeAlert(view: self, error: error)
+    }
+    
+    func configureView() {
         view.backgroundColor = UIColor.init(red: 210/255, green: 123/255, blue: 84/255, alpha: 1)
         view.addSubview(learnCardView)
         view.addSubview(testCardView)
@@ -41,19 +95,11 @@ class MainScreen: UIViewController {
         learnCardView.addGestureRecognizer(gesture)
         addGradientLayer()
     }
-    fileprivate func addGradientLayer() {
-        let firstColor = CGColor.init(red: 255/255, green: 123/255, blue: 84/255, alpha: 1)
-        let secondColor = CGColor.init(red: 147/255, green: 155/255, blue: 98/255, alpha: 1)
+    func configureCards(user: User) {
         
-        gradientLayer.colors = [firstColor, secondColor]
-        
-        gradientLayer.frame = view.bounds
-        gradientLayer.cornerRadius = 32
-        view.layer.insertSublayer(gradientLayer, at: 0)
-        
-        gradientLayer.locations = [0.0, 0.75, 1.0]
-        gradientLayer.startPoint = CGPoint(x: 0.5, y: 0.0)
-        gradientLayer.endPoint = CGPoint(x: 0.5, y: 1.0)
+        learnCardView.cardInfoLabel.text = "\(user.userLevel!)"
+        testCardView.cardInfoLabel.text = "\(user.totalWrongAnswer!) Yanlış Cevap Verdiniz"
+        reviewCardView.cardInfoLabel.text = "\(user.totalCorrectAnswer!) Doğru Cevap Verdiniz"
+        self.user = user
     }
-    
 }

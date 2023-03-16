@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SignUpView: UIView {
+final class SignUpView: UIView {
 
     
     lazy var loginButton = CustomLoginButton(title: "Giriş Yap", color: .red)
@@ -19,10 +19,12 @@ class SignUpView: UIView {
         return label
     }()
     lazy var nameTextField = CustomTextField(placeholderText: "İsminizi Giriniz")
+    lazy var surnameTextField = CustomTextField(placeholderText: "Soyadınızı Giriniz")
     lazy var emailTextField = CustomTextField(placeholderText: "E-Mailinizi Giriniz")
     lazy var passwordTextField = CustomTextField(placeholderText: "Şifrenizi Giriniz")
     
-    lazy var stackView = UIStackView(arrangedSubviews: [nameTextField ,emailTextField, passwordTextField, signUpButton, loginButton])
+    
+    lazy var stackView = UIStackView(arrangedSubviews: [nameTextField, surnameTextField,emailTextField, passwordTextField, signUpButton, loginButton])
     
     override init(frame: CGRect) {
         super.init(frame: frame)
