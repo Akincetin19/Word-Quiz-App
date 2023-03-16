@@ -23,15 +23,15 @@ final class MainScreen: UIViewController {
     var learnCardAnimation = LottieAnimationView(name: "lookOver")
     var testCardAnimation = LottieAnimationView(name: "Test Et")
     var reviewCardAnimation = LottieAnimationView(name: "Gözden Geçir")
-    private var viewModel = MainScreenViewModel()
+    private var viewModel : MainScreenViewModelProtocol?
     private var user: User?
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel.view = self
-        
+        viewModel = MainScreenViewModel()
+        viewModel?.view = self
     }
     override func viewWillAppear(_ animated: Bool) {
-        viewModel.viewDidLoad()
+        viewModel?.viewDidLoad()
         addCardAnimations()
         
     }

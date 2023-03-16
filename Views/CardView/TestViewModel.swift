@@ -19,7 +19,6 @@ final class TestViewModel {
     weak var view: TestScreenProtocol?
    
     var questions: [Question] = []
-    
     private var correctAnswers: [Question] = []
     private var wrongAnswers: [Question] = []
     var user: User?
@@ -53,6 +52,9 @@ final class TestViewModel {
         AuthService.shared.saveUserData(user: user ?? User()) { (_) in}
         AuthService.shared.addCorrectAnswers(questions: correctAnswers)
         AuthService.shared.addWrongAnswer(questions: wrongAnswers)
+    }
+    func x() {
+        
     }
     
     private func getQuestions(user : User) {

@@ -30,6 +30,9 @@ final class MainScreenViewModel {
             }
         }
     }
+    func x() {
+        print("xxx")
+    }
 }
 extension MainScreenViewModel: MainScreenViewModelProtocol {
     func viewDidLoad() {
